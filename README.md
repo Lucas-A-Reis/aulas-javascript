@@ -21,4 +21,11 @@ Introdução ao JavaScript para programação web
 - Recursos avançados de formulário (validação mais profissional, integração com API)
 - Interações avançadas (manipulação de teclado, mouse, gestos etc.)
 
+---
+
+## Sobre arrays
+Também chamados de matrizes, são estruturas de dados indexados. Na prática, cada array é uma lista de dados em que cada dado é armazenado num índice (posição) dentro do array.
+
+**Obs: a contagem dos índices sempre inicia do 0**
+
 ## mdn web docs
