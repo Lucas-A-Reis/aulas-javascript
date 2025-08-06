@@ -16,3 +16,14 @@ console.log(coisas[2]);
 
 const lista = ["eminem", "oitavo anjo do apocalipse", "senhor dos anéis", "mandioca com carne", "podcast à deriva", "cururu", "ethica nichomachea"];
 console.log(`Eu ouvi ${lista[1]} em loop, mas depois enjooei e então fui ouvir um episódio do ${lista[4]}. Aí quando esse episódio acabou eu fui ler a ${lista[6]}.`);
+
+// Array MATRIZ bidimensional
+const tecnologias = [
+    ["HTML", "CSS", "JavaScript"],
+    ["Figma", "Photoshop"],
+    ["PHP", "Node.js", "SQL", "Express"],
+];
+// console.log(tecnologias);
+console.log(tecnologias[0][2]);
+console.log(tecnologias[1][0]);
+console.log(tecnologias[2][3]);
