@@ -27,3 +27,4 @@ const tecnologias = [
 console.log(tecnologias[0][2]);
 console.log(tecnologias[1][0]);
 console.log(tecnologias[2][3]);
+

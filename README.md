@@ -29,3 +29,7 @@ Também chamados de matrizes, são estruturas de dados indexados. Na prática, c
 **Obs: a contagem dos índices sempre inicia do 0**
 
 ## mdn web docs
+
+## Sobre Objetos
+
+Objetos também são estruturas de dados, porém **não indexados**. Ou seja, a forma de acessar os dados é diferente da utilizada nos arrays. Acessamos dados no objeto através de **propriedades** e **valores** declarados nele.
