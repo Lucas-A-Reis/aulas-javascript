@@ -23,3 +23,13 @@ let resultado = a === b;
 console.log(resultado);
 // == compara apenas os caracteres e ignora a diferença de tipo de dado, se houver
 // === compara os caracteres e também o tipo de dado
+
+console.log("exemplo||");
+let feriado = false;
+let fimdesemana = false;
+if (feriado === true || fimdesemana === true) {
+    console.log("não tem aula");
+} else {
+    console.log("tem aula");
+    
+}
