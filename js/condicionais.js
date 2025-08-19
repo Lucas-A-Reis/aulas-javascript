@@ -18,4 +18,13 @@ if (aluno.idade < 18) {
     console.log(`${aluno.nome} é menor de idade`);
 } else {
     console.log(`${aluno.nome} é maior de idade`);
-}
+};
+
+let nota = 0;
+let nota2 = 10;
+let media = (nota+nota2)/2;
+if (media >= 7) {
+    console.log('aprovado!');
+} else {
+    console.log('reprovado!');
+};
