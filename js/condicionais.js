@@ -20,7 +20,7 @@ if (aluno.idade < 18) {
     console.log(`${aluno.nome} é maior de idade`);
 };
 
-let nota = 4;
+let nota = 1;
 let nota2 = 10;
 let media = (nota + nota2) / 2;
 if (media >= 7) {
@@ -39,3 +39,10 @@ if (media > 9) {
     console.log('desista!');
 };
 
+console.log("\nExemplo 4");
+
+let age = 20;
+
+// ternário
+let resultado = aluno.idade >= 18 ? "maior" : "menor";
+console.log(resultado);
