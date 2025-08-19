@@ -31,5 +31,12 @@ if (feriado === true || fimdesemana === true) {
     console.log("não tem aula");
 } else {
     console.log("tem aula");
-    
+}
+
+console.log("!");
+let BlackFryday = false;
+if (!BlackFryday) {
+    console.log('preços normais');
+} else {
+    console.log('preços com desconto');
 }
