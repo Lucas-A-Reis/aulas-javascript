@@ -33,7 +33,14 @@ for( let k = 10; k >= 1; k--){
 // loop e array
 
 const valar = ['aulë', 'manwë', 'varda', 'tulkas', 'melkor']
+
 for( let i = 0; i < valar.length; i++) {
     console.log(valar[i]);
 };
+
+// for of
+
+for (const vala of valar) {
+    console.log(vala);
+}
 
