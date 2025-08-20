@@ -44,3 +44,14 @@ for (const vala of valar) {
     console.log(vala);
 }
 
+const elda = {
+    nome: 'celebrimbor',
+    idade: 900,
+    reino: 'eregion',
+};
+
+// for in
+
+for (const prop in elda) {
+    console.log(elda[prop]);
+}
