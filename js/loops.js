@@ -23,5 +23,17 @@ console.log("\nExemplo 2: FOR");
 
 // for(inicialização da variável, condição e atualização)
 for( let j = 1; j <= 10; j++ ){
-    console.log('J vale '+j);
+    console.log('K vale '+j);
 };
+
+for( let k = 10; k >= 1; k--){
+    console.log('K vale '+k);
+};
+
+// loop e array
+
+const valar = ['aulë', 'manwë', 'varda', 'tulkas', 'melkor']
+for( let i = 0; i < valar.length; i++) {
+    console.log(valar[i]);
+};
+
