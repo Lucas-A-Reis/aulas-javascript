@@ -11,8 +11,8 @@ Normalmente, os loops são controlados através de uma variável contadora (comu
 console.log("Exemplo 1: WHILE (enquanto)");
 
 let i = 1;
-while (i <= 5){
-    console.log("Valor do i:"+i);
+while (i <= 5) {
+    console.log("Valor do i:" + i);
     i++; // incremento 
     // i = i + 1;
     // i += 1;
@@ -22,19 +22,19 @@ while (i <= 5){
 console.log("\nExemplo 2: FOR");
 
 // for(inicialização da variável, condição e atualização)
-for( let j = 1; j <= 10; j++ ){
-    console.log('K vale '+j);
+for (let j = 1; j <= 10; j++) {
+    console.log('K vale ' + j);
 };
 
-for( let k = 10; k >= 1; k--){
-    console.log('K vale '+k);
+for (let k = 10; k >= 1; k--) {
+    console.log('K vale ' + k);
 };
 
 // loop e array
 
 const valar = ['aulë', 'manwë', 'varda', 'tulkas', 'melkor']
 
-for( let i = 0; i < valar.length; i++) {
+for (let i = 0; i < valar.length; i++) {
     console.log(valar[i]);
 };
 
@@ -55,3 +55,31 @@ const elda = {
 for (const prop in elda) {
     console.log(elda[prop]);
 }
+
+const clientlist = [
+    {
+        nome: 'dio',
+        id: 1
+    },
+    {
+        nome: 'ozzy',
+        id: 2
+    },
+    {
+        nome: 'ian',
+        id: 3
+    },
+]
+
+for (const cliente of clientlist) {
+    console.log(`Cliente: ${cliente.nome}, id: ${cliente.id}`)
+};
+
+for (let i in clientlist){
+    console.log(clientlist[i=2].nome)
+}
+
+for (let i in clientlist){
+    console.log(clientlist[i=0].nome)
+}
+
