@@ -81,5 +81,8 @@ for (let i in clientlist){
 
 for (let i in clientlist){
     console.log(clientlist[i=0].nome)
-}
+};
 
+for (let j = 0; j < clientlist.length; j++){
+    console.log(`Cliente: ${clientlist[j].nome}, id: ${clientlist[j].id}`);   
+};
