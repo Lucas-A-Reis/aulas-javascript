@@ -72,14 +72,30 @@ const somar = (valor1, valor2) => valor1 + valor2;
 
 console.log(somar(929,497));
 
+console.log("Exemplo 7: formatando valor monetário");
+let preco = 5000;
+let desconto = preco * 0.10;
+let precofinal = preco - desconto;
+
+console.log(`Preço sem desconto: ${preco}`);
+console.log(`Desconto ${desconto}`);
+console.log(`Preço final ${precofinal}`);
+
+// usando recurson intl
+
+const exemplo = new Intl.NumberFormat("pt-br", {
+    style: "currency",
+    currency: "BRL"
+}).format(preco);
+
+console.log(exemplo);
 
 
-//bobeira
+/*bobeira
 
 function getRndInteger(min, max) {
   return Math.floor(Math.random() * (max - min) ) + min;
 }
 
 let number = getRndInteger(0,4);
-console.log(number);
-
+*/
