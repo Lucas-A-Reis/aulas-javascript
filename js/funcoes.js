@@ -23,4 +23,33 @@ exemplo1();
 
 console.log('Exemplo 2: função nomeada (ou declarada)');
 
- 
+function exemplo2 () {
+    console.log('esta é uma função nomeada, sem necessidade de variável ou c');
+}
+
+exemplo2();
+
+console.log('Exemplo 3: arrow function');
+
+const exemplo3 = () => {
+    console.log('sintaxe arrow function!');
+    
+}
+
+exemplo3();
+
+/* 
+Funções também podem trabalhar com parâmetros/argumentos
+
+Quando uma função precisa de valores/dados para algum processamento, ela os recebe através de parâmetros/dados entre os parênteses.
+
+Geralmente, ao terminar um resultado, a função retorna pra fora um resultado.
+*/
+
+function saudacao (nome = "visitante") {
+    console.log(`Olá ${nome}`);
+    
+}
+
+saudacao('mundo');
+saudacao();
