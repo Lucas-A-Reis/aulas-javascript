@@ -66,4 +66,20 @@ console.log("Resultado 2: "+result2);
 
 //Sempre que houver a necessidade de trabalhar com o resultado do processamento de uma função, usaremos o return
 
+console.log("Exemplo 6: Simplificando com arrow function");
+
+const somar = (valor1, valor2) => valor1 + valor2;
+
+console.log(somar(929,497));
+
+
+
+//bobeira
+
+function getRndInteger(min, max) {
+  return Math.floor(Math.random() * (max - min) ) + min;
+}
+
+let number = getRndInteger(0,4);
+console.log(number);
 
