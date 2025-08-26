@@ -10,20 +10,20 @@ Vantagens ao usar funções:
 - Maior facilidade para manutenções
  
 No JavaScript, exitem varias maneiras de se criar uma função: função anônima, função nomeada/declarada e arrow function*/
- 
+
 console.log("Exemplo 1: função anônima");
- 
-const exemplo1 = function(){
+
+const exemplo1 = function () {
     //corpo da função: ação que função vai fazer
     console.log("Ola Função Anônima");
-   
+
 }
 
 exemplo1();
 
 console.log('Exemplo 2: função nomeada (ou declarada)');
 
-function exemplo2 () {
+function exemplo2() {
     console.log('esta é uma função nomeada, sem necessidade de variável ou c');
 }
 
@@ -33,7 +33,7 @@ console.log('Exemplo 3: arrow function');
 
 const exemplo3 = () => {
     console.log('sintaxe arrow function!');
-    
+
 }
 
 exemplo3();
@@ -46,9 +46,9 @@ Quando uma função precisa de valores/dados para algum processamento, ela os re
 Geralmente, ao terminar um resultado, a função retorna pra fora um resultado.
 */
 
-function saudacao (nome = "visitante") {
+function saudacao(nome = "visitante") {
     console.log(`Olá ${nome}`);
-    
+
 }
 
 saudacao('mundo');
@@ -62,7 +62,7 @@ let result1 = multiplicadora(2, 10);
 let result2 = multiplicadora(8, 2);
 
 console.log(`Resultado 1: ${result1}`);
-console.log("Resultado 2: "+result2);
+console.log("Resultado 2: " + result2);
 
 //Sempre que houver a necessidade de trabalhar com o resultado do processamento de uma função, usaremos o return
 
@@ -70,16 +70,27 @@ console.log("Exemplo 6: Simplificando com arrow function");
 
 const somar = (valor1, valor2) => valor1 + valor2;
 
-console.log(somar(929,497));
+console.log(somar(929, 497));
 
 console.log("Exemplo 7: formatando valor monetário");
 let preco = 5000;
 let desconto = preco * 0.10;
 let precofinal = preco - desconto;
 
-console.log(`Preço sem desconto: ${preco}`);
-console.log(`Desconto ${desconto}`);
-console.log(`Preço final ${precofinal}`);
+console.log(`Preço sem desconto: ${formatarMoeda(preco)}`);
+console.log(`Desconto ${formatarMoeda(desconto)}`);
+console.log(`Preço final ${formatarMoeda(precofinal)}`);
+
+function formatarMoeda(valor) {
+
+    return new Intl.NumberFormat("pt-br", {
+        style: "currency",
+        currency: "BRL"
+    }).format(valor);
+
+    console.log(exemplo)
+
+}
 
 // usando recurson intl
 
@@ -91,11 +102,27 @@ const exemplo = new Intl.NumberFormat("pt-br", {
 console.log(exemplo);
 
 
-/*bobeira
-
+/*
 function getRndInteger(min, max) {
   return Math.floor(Math.random() * (max - min) ) + min;
 }
 
 let number = getRndInteger(0,4);
+
+let nomes = ["lucas", "edvanei", "van dissel", "william", "andré"]
+
+let nomeso = ["neymar", "vegeta", "trump", "lula"]
+
+let adjetivos = [""]
+
+let verbosi = ["vai encontrar o amor", "vai ser contratado"]
+
+let verbost = ["vai matar", "vai se casar com"]
+
+let adverbio = ["na estação da sé", "amanhã", "ano que vem"]
+
+console.log(nomes[number], verbost[number] || verbosi[number], nomeso[number], adverbio[number]);
 */
+
+
+
