@@ -53,3 +53,17 @@ function saudacao (nome = "visitante") {
 
 saudacao('mundo');
 saudacao();
+
+function multiplicadora(valor1, valor2) {
+    return valor1 * valor2
+}
+
+let result1 = multiplicadora(2, 10);
+let result2 = multiplicadora(8, 2);
+
+console.log(`Resultado 1: ${result1}`);
+console.log("Resultado 2: "+result2);
+
+//Sempre que houver a necessidade de trabalhar com o resultado do processamento de uma função, usaremos o return
+
+
