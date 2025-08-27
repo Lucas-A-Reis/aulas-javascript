@@ -17,7 +17,7 @@ console.log(paragrafo);
 /* Um evento é aquilo que, quando acontece, pode disparar ações no programa/site/aplicação. 
 Exemplos: clicar, pressionar tecla, tocar na tela, scrollar a página, recarregar a página e etc.*/
 
-exemplo01.addEventListener("click", function(){
+exemplo01.addEventListener("mouseover", function(){
     mensagem01.textContent = "Ai! laurië lantar lassi súrinen"; 
 });
 
