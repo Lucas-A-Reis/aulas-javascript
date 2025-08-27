@@ -45,20 +45,26 @@ document.querySelector("#referencias").addEventListener("click", function () {
     titulo.textContent = "Eventos";
     titulo.classList.remove("centraliza");
 })
-
+/*
 let b = false;
 
 document.querySelector("#noturno").addEventListener("click", function () {
-    if (b == 0) {
+    if (b == false) {
         b = true;
         document.querySelector("#ex03").textContent = "Exemplo 03: Modo Claro";
-        document.querySelector("body").classList.add("temaescuro")
+        pagina.classList.add("temaescuro")
     } else {
         b = false;
         document.querySelector("body").classList.remove("temaescuro");
         document.querySelector("#ex03").textContent = "Exemplo 03: Modo Noturno";
     }
 })
+*/
+document.querySelector("#noturno").addEventListener("click", function () {
+    document.querySelector("#ex03").textContent = "Exemplo 03: Modo Claro";
+    pagina.classList.toggle("temaescuro");
+})
+
 
 
 
