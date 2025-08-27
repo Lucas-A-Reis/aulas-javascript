@@ -13,3 +13,10 @@ console.log(pagina);
 const paragrafo = document.querySelectorAll("p"); 
 console.log(paragrafo);
 
+// detectando eventos
+/* Um evento é aquilo que, quando acontece, pode disparar ações no programa/site/aplicação. 
+Exemplos: clicar, pressionar tecla, tocar na tela, scrollar a página, recarregar a página e etc.*/
+
+exemplo01.addEventListener("click", function(){
+    console.log("Opa, clicou no h2"); 
+});
