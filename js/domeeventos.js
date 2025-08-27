@@ -24,4 +24,24 @@ exemplo01.addEventListener("mouseover", function(){
 
 mensagem01.addEventListener("dblclick", function(){
     mensagem01.textContent = "Yéni únótimë ve rámar aldaron!";
+    mensagem01.classList.remove("destaque");
+});
+
+/* 
+Exercícios
+ 
+1) Crie uma constante nova e selecione o h1 da sua página
+2) Crie um evento em que, ao passar o mouse em cima do h1, o texto mude para "Praticando Eventos!" e também fique centralizado.
+3) Faça também um evento de clique para que, quando clicar na palavra "Referências", o texto do h1 volte para a palavra "Eventos" e o alinhamento volte a ficar à esquerda (padrão). 
+*/
+
+const titulo = document.querySelector("h1");
+titulo.addEventListener("mouseover", function(){
+    titulo.textContent = "Praticando Eventos!";
+    titulo.classList.add("centraliza");
+})
+
+document.querySelector("#referencias").addEventListener("click", function(){
+    titulo.textContent = "Eventos";
+    titulo.classList.remove("centraliza");
 })
