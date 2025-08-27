@@ -19,6 +19,7 @@ Exemplos: clicar, pressionar tecla, tocar na tela, scrollar a página, recarrega
 
 exemplo01.addEventListener("mouseover", function(){
     mensagem01.textContent = "Ai! laurië lantar lassi súrinen"; 
+    mensagem01.classList.add("destaque");
 });
 
 mensagem01.addEventListener("dblclick", function(){
