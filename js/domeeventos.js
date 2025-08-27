@@ -65,14 +65,16 @@ const botao = document.querySelector("#noturno");
 
 let b = false;
 botao.addEventListener("click", function () {
-    if (b == false){
-    botao.textContent = "Desativar";
-    b = true;
+    if (b == false) {
+        botao.textContent = "Desativar";
+        b = true;
     } else {
         botao.textContent = "Ativar";
         b = false;
     }
-    pagina.classList.toggle("temaescuro")})
+    pagina.classList.toggle("temaescuro")
+    pagina.style.transition = "2s";
+})
 
 
 
