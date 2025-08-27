@@ -18,5 +18,9 @@ console.log(paragrafo);
 Exemplos: clicar, pressionar tecla, tocar na tela, scrollar a página, recarregar a página e etc.*/
 
 exemplo01.addEventListener("click", function(){
-    console.log("Opa, clicou no h2"); 
+    mensagem01.textContent = "Ai! laurië lantar lassi súrinen"; 
 });
+
+mensagem01.addEventListener("dblclick", function(){
+    mensagem01.textContent = "Yéni únótimë ve rámar aldaron!";
+})
