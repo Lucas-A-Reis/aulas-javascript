@@ -60,10 +60,19 @@ document.querySelector("#noturno").addEventListener("click", function () {
     }
 })
 */
-document.querySelector("#noturno").addEventListener("click", function () {
-    document.querySelector("#ex03").textContent = "Exemplo 03: Modo Claro";
-    pagina.classList.toggle("temaescuro");
-})
+
+const botao = document.querySelector("#noturno");
+
+let b = false;
+botao.addEventListener("click", function () {
+    if (b == false){
+    botao.textContent = "Desativar";
+    b = true;
+    } else {
+        botao.textContent = "Ativar";
+        b = false;
+    }
+    pagina.classList.toggle("temaescuro")})
 
 
 
