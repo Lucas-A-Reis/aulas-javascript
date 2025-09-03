@@ -61,8 +61,11 @@ document.querySelector("#noturno").addEventListener("click", function () {
 })
 */
 
+
+
 const botao = document.querySelector("#noturno");
 
+/*
 let b = false;
 botao.addEventListener("click", function () {
     if (b == false) {
@@ -73,8 +76,43 @@ botao.addEventListener("click", function () {
         b = false;
     }
     pagina.classList.toggle("temaescuro")
-    pagina.style.transition = "2s";
+    pagina.style.transition = "0.5s";
 })
+*/
+
+// Solução alternativa
+
+
+
+botao.addEventListener("click", function () {
+    pagina.classList.toggle("temaescuro")
+    pagina.style.transition = "0.5s";
+    if(pagina.classList.contains("temaescuro")) {
+    botao.textContent = "Desativar"
+    } else {
+    botao.textContent = "Ativar"
+    }
+})
+
+
+
+const janelamodal = document.querySelector("#janelinha")
+
+function gerenciarJanela(event){
+    if(event.clientY < 0){
+        janelamodal.showModal();
+        document.removeEventListener("mouseout", gerenciarJanela)
+    }
+}
+
+document.addEventListener("mouseout", gerenciarJanela)
+
+const botaoFechar = janelamodal.querySelector("button");
+
+botaoFechar.addEventListener("click", function(){
+    janelamodal.close();
+})
+
 
 
 
