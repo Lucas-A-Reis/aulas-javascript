@@ -95,20 +95,26 @@ botao.addEventListener("click", function () {
 })
 
 
-
+//constante com a janela
 const janelamodal = document.querySelector("#janelinha")
 
+//Função gerenciar janela
 function gerenciarJanela(event){
+    //Se o valor Y do parâmetro é menor que 0
     if(event.clientY < 0){
+        //Então mostra a janela e desliga a função
         janelamodal.showModal();
         document.removeEventListener("mouseout", gerenciarJanela)
     }
 }
 
+//Evento que liga a função gerenciarJanela
 document.addEventListener("mouseout", gerenciarJanela)
 
+//constante com o button dentro da janela
 const botaoFechar = janelamodal.querySelector("button");
 
+//Fecha a janela com evento de click
 botaoFechar.addEventListener("click", function(){
     janelamodal.close();
 })
